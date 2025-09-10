@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería punki</title>
+    <style>
+        body{
+            margin: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contenedor{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contenedor div{
+            cursor: pointer;
+            transition: 0.2s;
+            filter: grayscale(100%);
+        }
+
+        .contenedor div:hover{
+            scale: 1.02;
+            filter: grayscale(0%);
+            
+        }
+        .contenido{
+            background-color: cadetblue;
+            border-radius: 30px;
+        }
+
+        #primero{
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        #septimo{
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenido" id="primero">
+            <img src="descargar (1).jpg">
+        </div>
+        <div class="contenido" id="segundo">
+            <img src="descargar (2).jpg">
+        </div>
+        <div class="contenido">
+            <img src="descargar (3).jpg">
+        </div>
+        <div class="contenido">
+            <img src="sksk.jpg">
+        </div>
+        <div class="contenido">
+            <img src="descargar (5).jpg">
+        </div>
+        <div class="contenido">
+            <img src="m.jpg">
+        </div>
+        <div class="contenido" id="septimo">
+            <img src="ja.jpg">
+        </div>
+    
+</body>
+</html>
